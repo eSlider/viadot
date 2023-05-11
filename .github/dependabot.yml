@@ -1,7 +1,8 @@
 version: 2
 updates:
-  # "pip" includes poetry as well
-  - package-ecosystem: "pip"
+  - package-ecosystem: github-actions
+    open-pull-requests-limit: 10
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: daily
+      time: "09:00"
