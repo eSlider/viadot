@@ -35,4 +35,4 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')/viadot:2.0-latest
+            ghcr.io/${{ github.repository }}:2.0-latest
