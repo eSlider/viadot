@@ -34,4 +34,5 @@ jobs:
           file: docker/Dockerfile
           platforms: linux/amd64
           push: true
-          tags: ghcr.io/ $(echo ${{ github.repository }} |  sed 's/[^0-9,a-z,A-Z]/\-/g')/viadot:2.0-latest
+          tags: |
+            ghcr.io/$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')/viadot:2.0-latest
